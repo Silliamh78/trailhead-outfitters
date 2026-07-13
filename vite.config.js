@@ -25,3 +25,14 @@ export default defineConfig({
 // export default defineConfig({
 //   base: "/",
 // });
+
+// vite.config.js
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  root: 'client',               // folder that contains index.html
+  build: {
+    outDir: '../dist',          // place final build in repo/dist for Netlify
+    emptyOutDir: true
+  }
+})
