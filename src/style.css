@@ -3,8 +3,8 @@
 :root {
   --primary: #90b494ff;;
   --text: #181f1cff;
-  --bg: #bfc8adff;
-  --card-bg: #dbcfb0ff;
+  --bg: #dbcfb0ff;
+  --card-bg: rgb(231, 224, 205);
   --border: #718f94ff;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background: var(--primary);
+  background: #181f1cff;
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -37,8 +37,8 @@ h1 {
 
 nav button {
   background: transparent;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #90b494ff;
+  color: #90b494ff;
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
