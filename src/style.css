@@ -1,11 +1,11 @@
 /* src/style.css */
 
 :root {
-  --primary: #6d4aff;
-  --text: #333;
-  --bg: #f9f9f9;
-  --card-bg: #fff;
-  --border: #ddd;
+  --primary: #90b494ff;;
+  --text: #181f1cff;
+  --bg: #bfc8adff;
+  --card-bg: #dbcfb0ff;
+  --border: #718f94ff;
 }
 
 * {
