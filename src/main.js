@@ -1,60 +1,51 @@
-import './style.css'
-import javascriptLogo from './assets/javascript.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import { setupCounter } from './counter.js'
+// src/main.js
+import './style.css';
+import { fetchProducts } from './data.js';
+import { renderProducts } from './render.js';
 
-document.querySelector('#app').innerHTML = `
-<section id="center">
-  <div class="hero">
-    <img src="${heroImg}" class="base" width="170" height="179">
-    <img src="${javascriptLogo}" class="framework" alt="JavaScript logo"/>
-    <img src="${viteLogo}" class="vite" alt="Vite logo" />
-  </div>
-  <div>
-    <h1>Get started</h1>
-    <p>Edit <code>src/main.js</code> and save to test <code>HMR</code></p>
-  </div>
-  <button id="counter" type="button" class="counter"></button>
-</section>
+// Initialize the app
+async function init() {
+  const grid = document.getElementById('product-grid');
+  const loading = document.getElementById('loading-message');
+  const error = document.getElementById('error-message');
+  const orderCounter = document.getElementById('order-counter');
+  const menuTrigger = document.getElementById('header-menu-trigger');
+  const menuOptions = document.getElementById('header-menu-options');
 
-<div class="ticks"></div>
+  // Hamburger menu toggle
+  if (menuTrigger && menuOptions) {
+    menuTrigger.addEventListener('click', () => {
+      const expanded = menuTrigger.getAttribute('aria-expanded') === 'true' || false;
+      menuTrigger.setAttribute('aria-expanded', !expanded);
+      menuOptions.classList.toggle('is-hidden');
+      menuOptions.setAttribute('aria-hidden', expanded);
+    });
+  }
 
-<section id="next-steps">
-  <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src="${viteLogo}" alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img class="button-icon" src="${javascriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div id="social">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
-    <h2>Connect with us</h2>
-    <p>Join the Vite community</p>
-    <ul>
-      <li><a href="https://github.com/vitejs/vite" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#github-icon"></use></svg>GitHub</a></li>
-      <li><a href="https://chat.vite.dev/" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#discord-icon"></use></svg>Discord</a></li>
-      <li><a href="https://x.com/vite_js" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#x-icon"></use></svg>X.com</a></li>
-      <li><a href="https://bsky.app/profile/vite.dev" target="_blank"><svg class="button-icon" role="presentation" aria-hidden="true"><use href="/icons.svg#bluesky-icon"></use></svg>Bluesky</a></li>
-    </ul>
-  </div>
-</section>
+  // Show/hide loading state
+  loading?.classList.remove('is-hidden');
+  error?.classList.add('is-hidden');
 
-<div class="ticks"></div>
-<section id="spacer"></section>
-`
+  // Fetch and render products
+  const products = await fetchProducts();
+  loading?.classList.add('is-hidden');
 
-setupCounter(document.querySelector('#counter'))
+  if (!products || products.length === 0) {
+    error?.classList.remove('is-hidden');
+    return;
+  }
+
+  renderProducts(products, grid);
+  updateOrderCounter(orderCounter);
+}
+
+// Display order count from localStorage
+function updateOrderCounter(element) {
+  if (!element) return;
+  const count = parseInt(localStorage.getItem('orderCount') || '0');
+  element.textContent = count > 0 ? `You have placed ${count} order${count === 1 ? '' : 's'}` : '';
+}
+
+// Start the app
+init();
+
