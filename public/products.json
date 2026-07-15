@@ -30,5 +30,70 @@
     "image": "https://placehold.co/300x200?text=Boots",
     "price": 119.99,
     "category": "Footwear"
-  }
+  },
+  { 
+    "id": "pant01",
+    "name":"Durable Hiking Pants",
+    "description":"Durable, comfortable hiking pants",
+    "image": "https://placehold.co/300x200?text=Pants",
+    "price": 18.99,
+    "category": "Hiking"},
+
+{   
+    "id": "jacket01",
+    "name": "Waterproof Hiking Jacket",
+    "description": "Waterproof, comfortable hiking jacket",
+    "image": "https://placehold.co/300x200?text=jacket",
+    "price": 139.99,
+    "category": "Hiking"},
+{
+    "id": "tent02",
+    "name": "2-Person Backpacking Tent",
+    "description": "Lightweight tent for backcountry camping. Packs down small and sets up in minutes.",
+    "image": "https://placehold.co/300x200?text=Tent",
+    "price": 129.99,
+    "category": "Camping"
+  },
+  {
+    "id": "backpack02",
+    "name": "65L Trekking Backpack",
+    "description": "Durable backpack with adjustable harness and rain cover included.",
+    "image": "https://placehold.co/300x200?text=Backpack",
+    "price": 89.99,
+    "category": "Hiking"
+  },
+  {
+    "id": "stove02",
+    "name": "Compact Camping Stove",
+    "description": "Ultralight stove that boils water in under 3 minutes.",
+    "image": "https://placehold.co/300x200?text=Stove",
+    "price": 34.99,
+    "category": "Camping"
+  },
+  {
+    "id": "boots02",
+    "name": "Waterproof Hiking Boots",
+    "description": "Breathable, waterproof boots with ankle support for rugged trails.",
+    "image": "https://placehold.co/300x200?text=Boots",
+    "price": 119.99,
+    "category": "Footwear"
+  },
+  { 
+    "id": "pant02",
+    "name":"Durable Hiking Pants",
+    "description":"Durable, comfortable hiking pants",
+    "image": "https://placehold.co/300x200?text=Pants",
+    "price": 18.99,
+    "category": "Hiking"},
+
+{   
+    "id": "jacket02",
+    "name": "Waterproof Hiking Jacket",
+    "description": "Waterproof, comfortable hiking jacket",
+    "image": "https://placehold.co/300x200?text=jacket",
+    "price": 139.99,
+    "category": "Hiking"}
+
+
+
 ]
