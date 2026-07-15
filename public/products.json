@@ -1,0 +1,34 @@
+[
+  {
+    "id": "tent01",
+    "name": "2-Person Backpacking Tent",
+    "description": "Lightweight tent for backcountry camping. Packs down small and sets up in minutes.",
+    "image": "https://placehold.co/300x200?text=Tent",
+    "price": 129.99,
+    "category": "Camping"
+  },
+  {
+    "id": "backpack01",
+    "name": "65L Trekking Backpack",
+    "description": "Durable backpack with adjustable harness and rain cover included.",
+    "image": "https://placehold.co/300x200?text=Backpack",
+    "price": 89.99,
+    "category": "Hiking"
+  },
+  {
+    "id": "stove01",
+    "name": "Compact Camping Stove",
+    "description": "Ultralight stove that boils water in under 3 minutes.",
+    "image": "https://placehold.co/300x200?text=Stove",
+    "price": 34.99,
+    "category": "Camping"
+  },
+  {
+    "id": "boots01",
+    "name": "Waterproof Hiking Boots",
+    "description": "Breathable, waterproof boots with ankle support for rugged trails.",
+    "image": "https://placehold.co/300x200?text=Boots",
+    "price": 119.99,
+    "category": "Footwear"
+  }
+]
