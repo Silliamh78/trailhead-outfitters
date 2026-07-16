@@ -43,7 +43,7 @@
     "id": "jacket01",
     "name": "Waterproof Hiking Jacket",
     "description": "Waterproof, comfortable hiking jacket",
-    "image": "https://placehold.co/300x200?text=jacket",
+    "image": "https://placehold.co/300x200?text=Jacket",
     "price": 139.99,
     "category": "Hiking"},
 {
@@ -90,7 +90,7 @@
     "id": "jacket02",
     "name": "Waterproof Hiking Jacket",
     "description": "Waterproof, comfortable hiking jacket",
-    "image": "https://placehold.co/300x200?text=jacket",
+    "image": "https://placehold.co/300x200?text=Jacket",
     "price": 139.99,
     "category": "Hiking"}
 
