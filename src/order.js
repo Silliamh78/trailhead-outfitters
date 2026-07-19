@@ -38,4 +38,37 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Validate Email
-        const email = document.getElementById('email').v
+        const email = document.getElementById('email').value.trim();
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email) {
+            document.getElementById('email-error').textContent = 'Email is required';
+            isValid = false;
+        } else if (!emailPattern.test(email)) {
+            document.getElementById('email-error').textContent = 'Please enter a valid email';
+            isValid = false;
+        }
+
+        // Validate Address
+        const address = document.getElementById('address').value.trim();
+        if (!address) {
+            document.getElementById('address-error').textContent = 'Address is required';
+            isValid = false;
+        }
+
+        // If valid, process order
+        if (isValid) {
+            // 4. Update localStorage order count
+            let orderCount = parseInt(localStorage.getItem('orderCount') || '0');
+            orderCount++;
+            localStorage.setItem('orderCount', orderCount.toString());
+
+            // 5. Show confirmation
+            document.getElementById('order-section').classList.add('is-hidden');
+            document.getElementById('confirmation').classList.remove('is-hidden');
+            document.getElementById('confirmation-text').textContent = 
+                `Thank you, ${name}! Your order has been placed.`;
+            document.getElementById('order-count-display').textContent = 
+                `You have placed ${orderCount} order${orderCount === 1 ? '' : 's'}.`;
+        }
+    });
+});
