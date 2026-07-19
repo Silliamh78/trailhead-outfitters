@@ -10,7 +10,7 @@ export function renderProducts(products, container) {
       <img src="${product.image}" alt="${product.name}" />
       <h2>${product.name}</h2>
       <p>$${product.price.toFixed(2)}</p>
-      <a href="/product.html?id=${product.id}">View Details</a>
+      <a href="detail.html?id=${product.id}">View Details</a>
     `;
     container.appendChild(card);
   });

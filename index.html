@@ -1,50 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="/src/main.js"></script>
-    <title>Trailhead Outfitters</title>
-  </head>
-  <body>
-    <header>
-      <h1>STOREFRONT</h1>
-      <nav>
-        <button
-          id="header-menu-trigger"
-          type="button"
-          aria-expanded="false"
-          aria-controls="header-menu-options"
-        >
-          ≡ MENU
-        </button>
-        <div id="header-menu-options" class="is-hidden" aria-hidden="true">
-          <ul>
-            <li><a href="#">Info</a></li>
-            <li><a href="#">Alerts</a></li>
-            <li><a href="#">Maps</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Fees</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p id="order-counter" aria-live="polite"></p>
-    </header>
 
-    <main>
-      <h1>Available Items</h1>
-  <!-- Order counter (localStorage feature) -->
-  <p id="order-counter" aria-live="polite"></p>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="./src/main.js"></script>
+  <title>Trailhead Outfitters</title>
+</head>
 
-  <!-- Loading message (shows while fetching) -->
-  <p id="loading-message">Loading products...</p>
+<body>
+  <header>
+  <!-- <div id="product-list"></div> -->
+    <h1>STOREFRONT</h1>
+    <nav>
+      <button id="header-menu-trigger" type="button" aria-expanded="false" aria-controls="header-menu-options">
+        ≡ MENU
+      </button>
+      <div id="header-menu-options" class="is-hidden" aria-hidden="true">
+        <ul>
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Alerts</a></li>
+          <li><a href="#">Maps</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Fees</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p id="order-counter" aria-live="polite"></p>
+  </header>
 
-  <!-- Error message (shows if fetch fails) -->
-  <p id="error-message" class="is-hidden">Failed to load products. Please try again.</p>
+  <main>
+    <h1>Available Items</h1>
 
-  <!-- Product grid (cards get injected here by render.js) -->
-  <section id="product-grid" class="product-grid"></section>
-    </main>
-  </body>
+    <!-- Loading message (shows while fetching) -->
+    <p id="loading-message">Loading products...</p>
+
+    <!-- Error message (shows if fetch fails) -->
+    <p id="error-message" class="is-hidden">Failed to load products. Please try again.</p>
+
+    <!-- Product grid (cards get injected here by render.js) -->
+    <section id="product-grid" class="product-grid"></section>
+  </main>
+  <footer><a href="detail.html?id=tent01">Product Details</a></footer>
+</body>
+
 </html>
