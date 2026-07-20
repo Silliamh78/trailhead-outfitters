@@ -34,7 +34,10 @@ header {
 h1 {
   font-size: 1.5rem;
 }
+nav{
+  position: relative;
 
+}
 nav button {
   background: transparent;
   border: 2px solid #90b494ff;
@@ -46,12 +49,12 @@ nav button {
 #header-menu-options {
   position: absolute;
   top: 100%;
-  right: 2rem;
   background: white;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding: 1rem;
   min-width: 150px;
+  z-index: 1;
 }
 
 .is-hidden {
@@ -150,4 +153,9 @@ main {
 
 .product-card a:hover {
   opacity: 0.9;
+}
+
+#back-to-products{
+  color: white;
+  text-decoration: none;
 }
