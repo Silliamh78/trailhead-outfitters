@@ -159,3 +159,12 @@ main {
   color: white;
   text-decoration: none;
 }
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
