@@ -159,10 +159,6 @@ main {
   color: white;
   text-decoration: none;
 }
-#browse-products{
-  color: white;
-  text-decoration: none;
-}
 
 .btn-primary {
   background-color: var(--primary);
