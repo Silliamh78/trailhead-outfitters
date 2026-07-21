@@ -3,7 +3,7 @@
     "id": "tent01",
     "name": "2-Person Backpacking Tent",
     "description": "Lightweight tent for backcountry camping. Packs down small and sets up in minutes.",
-    "image": "https://placehold.co/300x200?text=Tent",
+    "image": "photos/tent03.jpg",
     "price": 129.99,
     "category": "Camping"
   },
@@ -35,7 +35,7 @@
     "id": "pant01",
     "name":"Durable Hiking Pants",
     "description":"Durable, comfortable hiking pants",
-    "image": "photos/pant01.jpg",
+    "image": "photos/pant1.jpg",
     "price": 18.99,
     "category": "Hiking"},
 
@@ -66,7 +66,7 @@
     "id": "stove02",
     "name": "Compact Camping Stove",
     "description": "Ultralight stove that boils water in under 3 minutes.",
-    "image": "photos/stove02.jpg",
+    "image": "photos/tent01.jpg",
     "price": 34.99,
     "category": "Camping"
   },
