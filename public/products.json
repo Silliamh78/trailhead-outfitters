@@ -3,7 +3,7 @@
     "id": "tent01",
     "name": "2-Person Backpacking Tent",
     "description": "Lightweight tent for backcountry camping. Packs down small and sets up in minutes.",
-    "image": "https://placehold.co/300x200?text=Tent",
+    "image": "photos/tent03.jpg",
     "price": 129.99,
     "category": "Camping"
   },
@@ -11,7 +11,7 @@
     "id": "backpack01",
     "name": "65L Trekking Backpack",
     "description": "Durable backpack with adjustable harness and rain cover included.",
-    "image": "https://placehold.co/300x200?text=Backpack",
+    "image": "photos/backpack01.jpg",
     "price": 89.99,
     "category": "Hiking"
   },
@@ -19,7 +19,7 @@
     "id": "stove01",
     "name": "Compact Camping Stove",
     "description": "Ultralight stove that boils water in under 3 minutes.",
-    "image": "https://placehold.co/300x200?text=Stove",
+    "image": "photos/stove01.jpg",
     "price": 34.99,
     "category": "Camping"
   },
@@ -27,7 +27,7 @@
     "id": "boots01",
     "name": "Waterproof Hiking Boots",
     "description": "Breathable, waterproof boots with ankle support for rugged trails.",
-    "image": "https://placehold.co/300x200?text=Boots",
+    "image": "photos/boots01.jpg",
     "price": 119.99,
     "category": "Footwear"
   },
@@ -35,7 +35,7 @@
     "id": "pant01",
     "name":"Durable Hiking Pants",
     "description":"Durable, comfortable hiking pants",
-    "image": "https://placehold.co/300x200?text=Pants",
+    "image": "photos/pant1.jpg",
     "price": 18.99,
     "category": "Hiking"},
 
@@ -43,14 +43,14 @@
     "id": "jacket01",
     "name": "Waterproof Hiking Jacket",
     "description": "Waterproof, comfortable hiking jacket",
-    "image": "https://placehold.co/300x200?text=Jacket",
+    "image": "photos/jacket01.jpg",
     "price": 139.99,
     "category": "Hiking"},
 {
     "id": "tent02",
     "name": "2-Person Backpacking Tent",
     "description": "Lightweight tent for backcountry camping. Packs down small and sets up in minutes.",
-    "image": "https://placehold.co/300x200?text=Tent",
+    "image": "photos/tent02.jpg",
     "price": 129.99,
     "category": "Camping"
   },
@@ -58,7 +58,7 @@
     "id": "backpack02",
     "name": "65L Trekking Backpack",
     "description": "Durable backpack with adjustable harness and rain cover included.",
-    "image": "https://placehold.co/300x200?text=Backpack",
+    "image": "photos/backpack02.jpg",
     "price": 89.99,
     "category": "Hiking"
   },
@@ -66,7 +66,7 @@
     "id": "stove02",
     "name": "Compact Camping Stove",
     "description": "Ultralight stove that boils water in under 3 minutes.",
-    "image": "https://placehold.co/300x200?text=Stove",
+    "image": "photos/tent01.jpg",
     "price": 34.99,
     "category": "Camping"
   },
@@ -74,7 +74,7 @@
     "id": "boots02",
     "name": "Waterproof Hiking Boots",
     "description": "Breathable, waterproof boots with ankle support for rugged trails.",
-    "image": "https://placehold.co/300x200?text=Boots",
+    "image": "photos/boots02.jpg",
     "price": 119.99,
     "category": "Footwear"
   },
@@ -82,7 +82,7 @@
     "id": "pant02",
     "name":"Durable Hiking Pants",
     "description":"Durable, comfortable hiking pants",
-    "image": "https://placehold.co/300x200?text=Pants",
+    "image": "photos/pant02.jpg",
     "price": 18.99,
     "category": "Hiking"},
 
@@ -90,7 +90,7 @@
     "id": "jacket02",
     "name": "Waterproof Hiking Jacket",
     "description": "Waterproof, comfortable hiking jacket",
-    "image": "https://placehold.co/300x200?text=Jacket",
+    "image": "photos/jacket02.jpg",
     "price": 139.99,
     "category": "Hiking"}
 
